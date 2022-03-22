@@ -31,6 +31,20 @@ public class CalculadoraTest {
         assertEquals(100, resultado);
     }
 
+    @Test
+    public void deveRetornarADivisaoQuandoDenominadorDiferenteDeZero(){
+        double resultado = c.dividir(100, 10);
+        assertEquals(10, resultado);
+    }
+
+    @Test
+    public void deveRetornarNegativoQuandoDenominadorIgualDeZero(){
+        double resultado = c.dividir1(20, 0);
+        assertEquals(-1, resultado);
+    }
+
+   
+
   
 
 }
